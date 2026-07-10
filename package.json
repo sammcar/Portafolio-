@@ -19,17 +19,18 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "^15.3.0",
     "next-intl": "^4.0.0",
+    "next-mdx-remote": "^6.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next-mdx-remote": "^5.0.0",
-    "gray-matter": "^4.0.3"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
+    "@tailwindcss/postcss": "^4.0.0",
     "@testing-library/jest-dom": "^6.6.0",
     "@testing-library/react": "^16.1.0",
     "@types/node": "^22.10.0",
@@ -41,7 +42,6 @@
     "lint-staged": "^15.3.0",
     "semantic-release": "^24.2.0",
     "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
     "typescript": "^5.7.0",
     "vitest": "^3.0.0"
   },

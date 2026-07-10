@@ -4,7 +4,11 @@ export function formatDate(iso: string, locale: string): string {
   if (Number.isNaN(date.getTime())) {
     throw new Error(`formatDate: invalid ISO date "${iso}"`)
   }
-  return new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long' }).format(date)
+  return new Intl.DateTimeFormat(locale, {
+    year: 'numeric',
+    month: 'long',
+    timeZone: 'UTC',
+  }).format(date)
 }
 
 /** URL-safe slug from any string ("Láser GRBL 80W" -> "laser-grbl-80w"). */
