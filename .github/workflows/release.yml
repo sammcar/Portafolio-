@@ -25,6 +25,12 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
 
+      - name: Align npm with local (lockfile v11 compat)
+        run: npm install -g npm@11
+
+      - name: Align npm with local (lockfile v11 compat)
+        run: npm install -g npm@11
+
       - run: npm ci
 
       - name: semantic-release
