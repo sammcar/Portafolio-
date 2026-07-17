@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0 # full history so commit analysis works
           ssh-key: ${{ secrets.RELEASE_SSH_KEY }}
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
